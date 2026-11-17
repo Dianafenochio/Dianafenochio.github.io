@@ -209,6 +209,39 @@ filter: grayscale(100%) sepia(35%) saturate(140%) hue-rotate(215deg) brightness(
   color: #211b29;
 }
 
+/* SEPARADOR DE TRES CORAZONES */
+
+.separador-corazones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1400px;
+  padding: 0 5%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.separador-corazones span {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #c9a8d8;
+}
+
+.separador-corazones span:nth-child(2) {
+  color: #83ad98;
+}
+
+@media (max-width: 700px) {
+  .separador-corazones {
+    gap: 10px;
+    padding: 0 8%;
+  }
+
+  .separador-corazones span {
+    font-size: 19px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -235,6 +268,12 @@ filter: grayscale(100%) sepia(35%) saturate(140%) hue-rotate(215deg) brightness(
   </a>
 </div>
     
+<div class="separador-corazones" aria-hidden="true">
+  <span>♥</span>
+  <span>♥</span>
+  <span>♥</span>
+</div>
+
 <section class="invitacion-mapa">
   <p>En algún lugar del mundo, alguien se enamoró.<span> En otro, alguien todavía intenta olvidar.</span></p>
 
